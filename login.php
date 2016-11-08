@@ -11,7 +11,7 @@
             <form action='classes/App.php'  method='POST'>
               <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label'>
                 <input class='mdl-textfield__input' type='text' name='flogin' minlength='4' required pattern='^[a-zA-Z]+$'>
-                <label class='mdl-textfield__label' for='sample3'>Логин</label>
+                <label class='mdl-textfield__label' for='sample3'>Логин(латинские буквы и цифры)</label>
               </div>
               <br>
               <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label'>
