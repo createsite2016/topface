@@ -1,0 +1,11 @@
+.panel {
+  width: 900px;
+  text-align: justify
+}
+.demo-card-wide.mdl-card {
+  width: 512px;
+}
+
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
