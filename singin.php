@@ -11,13 +11,13 @@
         <center>
             <form action='classes/App.php' method='POST'>
               <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label'>
-                <input class='mdl-textfield__input' type='text' name='fname' required>
-                <label class='mdl-textfield__label' for='sample3'>Имя пользователя(только русскими буквми)</label>
+                <input class='mdl-textfield__input' type='text' name='fname' minlength='2' required pattern='^[а-яА-Я]+$'>
+                <label class='mdl-textfield__label' for='sample3'>Имя пользователя(только русские буквы)</label>
               </div>
               <br>
               <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label'>
-                <input class='mdl-textfield__input' type='text' name='flogin' required> 
-                <label class='mdl-textfield__label' for='sample3'>Логин(только латинскими буквами)</label>
+                <input class='mdl-textfield__input' type='text' name='flogin' minlength='4' required pattern='^[a-zA-Z0-9]+$'> 
+                <label class='mdl-textfield__label' for='sample3'>Логин(только латинские буквы и цифры)</label>
               </div>
               <br>
               <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label'>
