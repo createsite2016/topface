@@ -18,6 +18,7 @@ session_start();
 
 
               <br>мой ID: 1466091
+              <br>Ссылка на <a href='https://github.com/createsite2016/topface/tree/master'>GitHub</a>
               <br>Ко мне на почту поступила <a href='https://docs.google.com/forms/d/e/1FAIpQLSdVvA1aAxiMfK5F2Geu82da6JH1n9kIFRFnu4lyhoxWJegK6A/viewform?c=0&w=1'>эта</a> задача
               <p>Для решения задачи я выбрал следущее:
               <br> - PHP 7.0 так как он на 40% быстрее PHP 5.x
