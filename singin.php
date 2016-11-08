@@ -1,6 +1,4 @@
 <?php
-// Входные данные
-        $ip = $_SERVER["REMOTE_ADDR"];
 // Контент страницы
         $title = "Регистрация пользователя"; // Заголовок
 // Название и пункты меню
@@ -22,8 +20,7 @@
               <br>
               <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label'>
                 <input class='mdl-textfield__input' type='password' name='fpassword' required>
-                <label class='mdl-textfield__label' for='sample3'>Пароль(минимум 6 символов)</label>
-                <input type='hidden' name='ip' value='".$ip."'> 
+                <label class='mdl-textfield__label' for='sample3'>Пароль(минимум 6 символов)</label> 
                 <input type='hidden' name='act' value='singin'>
               </div>
               <br>
