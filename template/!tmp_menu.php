@@ -7,7 +7,7 @@ if (!empty($_SESSION['login']) or !empty($_SESSION['id'])) {
     $title_menu = "Привет, " . $_SESSION['name']; // приветствуем пользователя
     $link1 = "index.php"; $link1_title = "Главная";
     $link2 = "admin.php"; $link2_title = "Пользователи";
-    $link3 = "classes/app.php?act=exit"; $link3_title = "Выход";
+    $link3 = "classes/App.php?act=exit"; $link3_title = "Выход";
 }
 else {
     $en_menu = 'hide'; // для показа меню есть два свойства show или hide.

@@ -1,4 +1,6 @@
 <?php
+session_start();
+
         require_once 'classes/Database.php';
         $db = new Database();
 // Контент страницы
@@ -41,9 +43,9 @@
         $content_page = $content_page . $content_table . '</tbody></table></center>';
 
 // Подключение шаблона
-        include("template/!tmp_header.php"); // хэдер
-        include("template/!tmp_menu.php"); // меню
-        include("template/!tmp_content.php"); // контент страницы
-        include("template/!tmp_footer.php"); // футер
+        include_once("template/!tmp_header.php"); // хэдер
+        include_once("template/!tmp_menu.php"); // меню
+        include_once("template/!tmp_content.php"); // контент страницы
+        include_once("template/!tmp_footer.php"); // футер
 
 ?>

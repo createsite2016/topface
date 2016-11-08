@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // Контент страницы
         $title = "Регистрация пользователя"; // Заголовок
 // Название и пункты меню
@@ -9,17 +11,17 @@
         <center>
             <form action='classes/App.php' method='POST'>
               <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label'>
-                <input class='mdl-textfield__input' type='text' name='fname' minlength='2' required pattern='^[а-яА-Я]+$'>
+                <input class='mdl-textfield__input' type='text' name='fname' minlength='2' autocomplete='off' required pattern='^[а-яА-Я]+$'>
                 <label class='mdl-textfield__label' for='sample3'>Имя пользователя(только русские буквы)</label>
               </div>
               <br>
               <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label'>
-                <input class='mdl-textfield__input' type='text' name='flogin' minlength='4' required pattern='^[a-zA-Z0-9]+$'> 
+                <input class='mdl-textfield__input' type='text' name='flogin' minlength='4' autocomplete='off' required pattern='^[a-zA-Z0-9]+$'> 
                 <label class='mdl-textfield__label' for='sample3'>Логин(только латинские буквы и цифры)</label>
               </div>
               <br>
               <div class='mdl-textfield mdl-js-textfield mdl-textfield--floating-label'>
-                <input class='mdl-textfield__input' type='password' name='fpassword' required>
+                <input class='mdl-textfield__input' type='password' name='fpassword' autocomplete='off' required>
                 <label class='mdl-textfield__label' for='sample3'>Пароль(минимум 6 символов)</label> 
                 <input type='hidden' name='act' value='singin'>
               </div>
@@ -33,9 +35,9 @@
         ";
 
 // Подключение шаблона
-        include("template/!tmp_header.php"); // хэдер
-        include("template/!tmp_menu.php"); // меню
-        include("template/!tmp_content.php"); // контент страницы
-        include("template/!tmp_footer.php"); // футер
+        include_once("template/!tmp_header.php"); // хэдер
+        include_once("template/!tmp_menu.php"); // меню
+        include_once("template/!tmp_content.php"); // контент страницы
+        include_once("template/!tmp_footer.php"); // футер
 
 ?>
