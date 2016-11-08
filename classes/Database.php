@@ -61,8 +61,15 @@ class Database{
         $this->insertRow($query, $params);
     }
     // go page
-    public function goWay($way){
-        exit("<html><head><meta http-equiv='Refresh' content='0; URL=../".$way.".php'></head></html>");
+    public function goWay($way,$message){
+        // если переданно сообщение, то выводим его, а потом делаем переадресацию
+        if (!empty($message)) {
+            exit("<html><head><meta http-equiv='Refresh' content='2; URL=../".$way.".php'></head><body><center><br><br><br><h3><font color='red'>".$message."</font></h3></center></body></html>");
+        }
+        if (empty($message)) {
+            exit("<html><head><meta http-equiv='Refresh' content='0; URL=../".$way.".php'></head></html>");
+        }
+
     }
 }
 
