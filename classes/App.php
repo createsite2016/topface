@@ -30,6 +30,9 @@ class App {
         // Регистрация
 		if ($act == "singin") {
 
+		    
+
+
             $db->insertRow("INSERT INTO users(username,login,password,ip) VALUE(?, ?, ?, ?)", [$name,$login, $password, $ip]);
             $db->Disconnect(); // опустошаем объект БД
             $db->goWay('login','Теперь вы можете авторизоваться'); // уходим на страницу login.php
