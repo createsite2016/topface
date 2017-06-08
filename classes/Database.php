@@ -5,8 +5,10 @@ class Database{
     protected $datab;
     
     // connect to db
-    public function __construct($username = "root", $password = "root", $host = "localhost", $dbname = "topface", $options = []){
+    public function __construct($username = "shkolaco_support", $password = "16213150z", $host = "10.78.101.141", $dbname = "shkolaco_baza", $options = []){
         $this->isConn = TRUE;
+    //public function __construct($username = "root", $password = "root", $host = "localhost", $dbname = "topface", $options = []){
+    //    $this->isConn = TRUE;
         try {
             $this->datab = new PDO("mysql:host={$host};dbname={$dbname};charset=utf8", $username, $password, $options);
             $this->datab->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
