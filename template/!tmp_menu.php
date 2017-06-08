@@ -44,7 +44,7 @@ else {
 
 
 <div class="mdl-layout__drawer">
-  <span class="mdl-layout-title">Menu</span>
+  <span class="mdl-layout-title">Меню</span>
   <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="<?php echo $link1;?>"><?php echo $link1_title;?></a>
       <a class="mdl-navigation__link" href="<?php echo $link2;?>"><?php echo $link2_title;?></a>
